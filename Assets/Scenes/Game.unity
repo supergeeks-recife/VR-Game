@@ -319,9 +319,9 @@ MonoBehaviour:
   - {fileID: 1232766363669618, guid: 2b519101e10d4a74580d4c86ac9e03e6, type: 3}
   - {fileID: 1185082912798350, guid: 71442e8cd72511e4fabb72f1a2cc82dd, type: 3}
   - {fileID: 1121113006719782, guid: 386f40ad68cdd3c4fbcb471ef2d93772, type: 3}
-  min: 50
-  max: 100
-  distance: 4
+  min: 10
+  max: 50
+  distance: 15
 --- !u!1 &1321823228
 GameObject:
   m_ObjectHideFlags: 0

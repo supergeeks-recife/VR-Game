@@ -11,14 +11,33 @@ public class CreateLevel : MonoBehaviour
     public float distance;
     private GameObject randomObject;
 
+    public float spawnInterval;
+    private int maxCount;
+    private int count = 0;
+
     void Start()
     {
-        SpawnObjects();
+        maxCount = Random.Range(min, max);
+
+        if (spawnInterval == 0)
+        {
+            for (int i = 0; i < maxCount; i++)
+            {
+                SpawnObjects();
+            }
+        }
+        else
+        {
+            InvokeRepeating("SpawnObjects", 0, spawnInterval);
+        }
     }
 
     void Update()
     {
-        
+        if(count >= max)
+        {
+            CancelInvoke();
+        }
     }
 
     public void SpawnObjects()
@@ -33,5 +52,7 @@ public class CreateLevel : MonoBehaviour
         float zpos = Random.Range(transform.position.z - distance, transform.position.z + distance);
 
         randomObject.transform.localPosition = new Vector3(xpos, 1, zpos);
+
+        count++;
     }
 }
