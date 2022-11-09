@@ -314,11 +314,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetos:
-  - {fileID: 2924267535076759258, guid: 374b2f0992ab143408636e213fe37080, type: 3}
-  - {fileID: 3553665423952208767, guid: 608d8b7226db6884b84f01408940190c, type: 3}
-  - {fileID: 1366399811815255212, guid: 76e2ef95ef5811b44a4658805c7bbb41, type: 3}
-  min: 0
-  max: 0
+  - {fileID: 1640908652775104, guid: cd87e5026d1695148aabe96121c526ef, type: 3}
+  - {fileID: 1275909538635612, guid: 2767c12992d890f44b14f433fe854668, type: 3}
+  - {fileID: 1232766363669618, guid: 2b519101e10d4a74580d4c86ac9e03e6, type: 3}
+  - {fileID: 1185082912798350, guid: 71442e8cd72511e4fabb72f1a2cc82dd, type: 3}
+  - {fileID: 1121113006719782, guid: 386f40ad68cdd3c4fbcb471ef2d93772, type: 3}
+  min: 50
+  max: 100
   distance: 4
 --- !u!1 &1321823228
 GameObject:

@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed;
-
+    public float speed;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        transform.position = transform.position + Camera.main.transform.forward * speed * Time.deltaTime;
     }
 }
