@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public GameObject bullet;
+    public float bulletSpeed;
     void Start()
     {
         
@@ -21,6 +22,12 @@ public class Shoot : MonoBehaviour
 
     public void Atirar()
     {
-        Debug.Log("Pá!");
+        GameObject createdBullet = Instantiate(bullet);
+        createdBullet.transform.position = transform.position;
+
+        Rigidbody bullet_rig = createdBullet.GetComponent<Rigidbody>();
+        Camera cam = GetComponentInChildren<Camera>();
+
+        bullet_rig.velocity = cam.transform.rotation * Vector3.forward * bulletSpeed;
     }
 }

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 040da4bbeb199d040a9d3566c0761b4e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 100
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: a Black Lives
+  fontNames:
+  - a Black Lives
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d08166db09004f549ad2d0883b5064d3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
