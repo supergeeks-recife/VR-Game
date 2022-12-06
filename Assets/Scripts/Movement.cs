@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public GameObject Car;
     public float speed;
+
     void Start()
     {
 
@@ -14,5 +16,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + Camera.main.transform.forward * speed * Time.deltaTime;
+        Car.transform.rotation = Camera.main.transform.rotation;
     }
 }
